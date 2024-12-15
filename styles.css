@@ -1,0 +1,306 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    flex-direction: row;
+    /* چینش افقی */
+}
+
+.Header-image {
+    width: 100%;
+    /* مقدار کمتر برای کاهش عرض */
+    margin: 20px auto;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        display: flex;
+        background-color: #e0e0e0;
+        border-radius: 25px;
+        padding: 5px 10px;
+        margin-right: auto;
+        /* فضای چپ خودکار برای جابجایی به راست */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    flex-direction: row;
+    /* چیدمان عمودی */
+}
+
+.left-section {
+    display: flex;
+    align-items: ltr;
+    flex-direction: row;
+    /* چیدمان عمودی */
+    justify-content: flex-start;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    /* چیدمان عمودی */
+    justify-content: flex-end;
+    /* چینش به سمت راست */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.login-btn {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 200px;
+    ;
+    direction: rtl;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+    direction: rtl;
+}
+
+.search-bar {
+    display: flex;
+    direction: rtl;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    padding: 5px 10px;
+    flex-direction: row;
+    /* چینش افقی */
+    justify-content: flex-end;
+    /* چینش به سمت راست */
+}
+
+.search-bar input {
+    display: flex;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    width: 200px;
+    outline: none;
+    justify-content: flex-end;
+    /* چینش به سمت راست */
+
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.image-circle {
+    width: 100px;
+    /* عرض دایره */
+    height: 100px;
+    /* ارتفاع دایره */
+    border-radius: 50%;
+    /* ایجاد دایره */
+    object-fit: cover;
+    /* اطمینان از پر شدن دایره */
+    margin-right: 10px;
+    /* فاصله بین تصاویر */
+}
+
+.image-container {
+    overflow-x: auto;
+    /* اطمینان از اسکرول افقی */
+    white-space: nowrap;
+    /* جلوگیری از خط‌های جدید */
+    padding: 10px 0;
+    /* فضای بالای و پایینی */
+}
+
+.image-wrapper {
+    display: inline-block;
+    /* نمایش به صورت بلوک خطی */
+    text-align: center;
+    /* مرکز کردن متن */
+    margin-right: 20px;
+    /* فاصله بین تصاویر */
+}
+
+.productcards {
+    display: flex;
+    display: inline-block;
+    /* نمایش به صورت بلوک خطی */
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #e80c0c;
+    border-bottom: 1px solid #eee;
+    flex-direction: column-reverse;
+    /* چیدمان عمودی */
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    direction: rtl;
+    justify-content: flex-start;
+
+}
+
+.productcard {
+    display: inline-block;
+    /* نمایش به صورت بلوک خطی */
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #fbf9f9;
+    border-bottom: 1px solid #eee;
+    flex-direction: column-reverse;
+    /* چیدمان عمودی */
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    direction: rtl;
+}
+
+.image-square {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    /* فاصله بین تصاویر */
+    direction: rtl;
+}
+
+.card {
+    display: inline-block;
+    /* نمایش به صورت بلوک خطی */
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #fafaf8;
+    border-bottom: 1px solid #fafaf8;
+    flex-direction: column-reverse;
+    /* چیدمان عمودی */
+    border-radius: 5px;
+    width: 300px;
+    height: 180px;
+
+    cursor: pointer;
+    overflow: auto;
+
+
+}
+
+.cards {
+    display: flex;
+    /* فقط از display: flex استفاده کنید */
+    justify-content: space-between;
+    /* برای فاصله گذاری مناسب */
+    padding: 10px 40px;
+    background-color: #fafaf8;
+    border-bottom: 1px solid #fafaf8;
+    border-radius: 20px;
+    flex-direction: row;
+    /* تغییر به row برای چیدمان افقی */
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.cardTaghfif{
+    display: flex;
+    /* فقط از display: flex استفاده کنید */
+    justify-content: space-between;
+    /* برای فاصله گذاری مناسب */
+    padding: 10px 40px;
+    background-color: #fafaf8;
+    border-bottom: 1px solid #fafaf8;
+    border-radius: 50px;
+    flex-direction: row;
+    /* تغییر به row برای چیدمان افقی */
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.img{
+    border-radius: 50px;
+}
+.slider {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.slide {
+    min-width: 150px; /* تنظیم عرض متناسب */
+    margin: 0 10px; /* فاصله بین اسلایدها */
+}
+
+.slide img {
+    max-width: 100%;
+    border-radius: 10px;  /* گوشه‌های گرد */
+}
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* امکان چیدمان چند ردیفی */
+    padding: 20px;
+}
+
+.category {
+    width: 30%; /* تنظیم عرض دسته‌ها */
+    margin: 10px;
+    text-align: center; /* مرکز قرار دادن متن */
+    background-color: #f8f8f8;
+    border-radius: 8px; /* گوشه‌های گرد */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.products {
+    display: flex; 
+    flex-direction:row-reverse; /* چیدمان عمودی */
+}
+
+.product {
+    margin: 10px 0; /* فاصله بین محصولات */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px; /* گوشه‌های گرد برای تصاویر */
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    text-decoration: underline; /* افکت هاور */
+}
+

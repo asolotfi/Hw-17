@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <picture>
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img class="Header-image" src="pictures/image.png" alt="توضیح تصویر">
+            </a>
+        </picture>
+        <div class="header">
+            <div class="left-section">
+                <a href="https://www.digikala.com/checkout/cart/">
+                    <img src="pictures/icons/4photoshop-icon-shopping-cart.jpg" alt="cart icon" class="icon">
+                </a>
+                <button class="login-btn">ورود | ثبت‌نام</button>
+            </div>
+            <div class="left-section">
+                <input type="text" placeholder="جستجو">
+                <button type="submit"><span class="icon">🔍</span></button>
+            </div>
+            <img src="pictures/icons/image-Digikala.png" alt="دیجی‌کالا" class="logo">
+        </div>
+        <div class="container">
+            <div class="image-container d-flex">
+                <img src="pictures/download.jpg" alt="بهترین هندزفری" class="image-circle"
+                    onclick="showVideo('path/to/your/first/video.mp4')">
+                <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+                <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+                    onclick="showVideo('path/to/your/second/video.mp4')">
+                <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+                <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+                    onclick="showVideo('path/to/your/second/video.mp4')">
+                <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+
+                <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+                    onclick="showVideo('path/to/your/second/video.mp4')">
+                <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+            </div>
+        </div>
+
+        <!-- مدال ویدیو -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">مشاهده ویدیو</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video id="modalVideo" controls style="width: 100%;">
+                            <source src="" type="video/mp4">
+                            مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="pictures/slide1.webp" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="pictures/slide2.webp" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="pictures/slide3.webp" alt="Third slide">
+                </div>
+            </div>
+            <!-- دکمه‌های ناوبری -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function showVideo(videoSrc) {
+                const videoElement = document.getElementById('modalVideo');
+                videoElement.src = videoSrc;
+                videoElement.load();  // بارگذاری ویدیو جدید
+                const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+                modal.show();  // نشان دادن مدال
+            }
+        </script>
+        <div class="menu icons">
+            <div class="image-container d-flex">
+                <img src="pictures/icons/download (1).jpg" alt="بهترین هندزفری" class="image-circle"
+                    onclick="showVideo('path/to/your/first/video.mp4')">
+                <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+                <img src="pictures/icons/download (1).jpg" alt="بهترین هندزفری" class="image-circle"
+                    onclick="showVideo('path/to/your/first/video.mp4')">
+                <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+                <img src="pictures/icons/download (1).jpg" alt="بهترین هندزفری" class="image-circle"
+                    onclick="showVideo('path/to/your/first/video.mp4')">
+                <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+                <img src="pictures/icons/download (1).jpg" alt="بهترین هندزفری" class="image-circle"
+                    onclick="showVideo('path/to/your/first/video.mp4')">
+                <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+
+                <img src="pictures/icons/images.jpg" alt="بهترین گوشی" class="image-circle"
+                    onclick="showVideo('path/to/your/second/video.mp4')">
+                <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+            </div>
+        </div>
+    </div>
+    <div class="productcards">
+        <div class="productcard">
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/9ce1c354e08b0a0d2ca5b7ae2c027196c379d86f_1725375911.webp" alt="بهترین گوشی"
+                    class="image-square"></a>
+            <p>گوشی موبایل هانوفر مدل 105<br> دو سیم کارت<br>ظرفیت 32 مگابایت <br>و رم 64 مگابایت</p>
+        </div>
+        <div class="productcard">
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/9ce1c354e08b0a0d2ca5b7ae2c027196c379d86f_1725375911.webp" alt="بهترین گوشی"
+                    class="image-square"></a>
+            <p>گوشی موبایل هانوفر مدل 105<br> دو سیم کارت<br>ظرفیت 32 مگابایت <br>و رم 64 مگابایت</p>
+        </div>
+        <div class="productcard">
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/9ce1c354e08b0a0d2ca5b7ae2c027196c379d86f_1725375911.webp" alt="بهترین گوشی"
+                    class="image-square"></a>
+            <p>گوشی موبایل هانوفر مدل 105<br> دو سیم کارت<br>ظرفیت 32 مگابایت <br>و رم 64 مگابایت</p>
+        </div>
+        <div class="productcard">
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/9ce1c354e08b0a0d2ca5b7ae2c027196c379d86f_1725375911.webp" alt="بهترین گوشی"
+                    class="image-square"></a>
+            <p>گوشی موبایل هانوفر مدل 105<br> دو سیم کارت<br>ظرفیت 32 مگابایت <br>و رم 64 مگابایت</p>
+        </div>
+        <div class="productcard">
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/9ce1c354e08b0a0d2ca5b7ae2c027196c379d86f_1725375911.webp" alt="بهترین گوشی"
+                    class="image-square"></a>
+            <p>گوشی موبایل هانوفر مدل 105<br> دو سیم کارت<br>ظرفیت 32 مگابایت <br>و رم 64 مگابایت</p>
+        </div>
+    </div>
+    <div class="cards">
+    
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/Screenshot 2024-12-15 132931.png" alt="بهترین گوشی"></a> 
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/Screenshot 2024-12-15 133037.png" alt="بهترین گوشی"></a>
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img  src="pictures/Screenshot 2024-12-15 133120.png" alt="بهترین گوشی"></a>      
+            <a
+                href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+                <img src="pictures/Screenshot 2024-12-15 133145.png" alt="بهترین گوشی"></a>
+    
+    </div>
+
+
+
+    <div class="cardTaghfif">
+    
+        <a
+            href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+            <img class="img" src="pictures/Screenshot 2024-12-15 151406.png" alt="بهترین گوشی"></a>
+        <a
+            href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+            <img class="img" src="pictures/Screenshot 2024-12-15 151448.png" alt="بهترین گوشی"></a>      
+        <a
+            href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+            <img class="img" src="pictures/Screenshot 2024-12-15 151513.png" alt="بهترین گوشی"></a>
+
+</div>
+<p dir="center">خرید بر اساس دسته‌بندی</p>
+
+<div class="container">
+    <div class="image-container d-flex">
+        <img src="pictures/download.jpg" alt="بهترین هندزفری" class="image-circle"
+            onclick="showVideo('path/to/your/first/video.mp4')">
+        <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+        <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+            onclick="showVideo('path/to/your/second/video.mp4')">
+        <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+        <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+            onclick="showVideo('path/to/your/second/video.mp4')">
+        <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+
+        <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+            onclick="showVideo('path/to/your/second/video.mp4')">
+        <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+        
+    </div>
+    <div class="container">
+        <div class="image-container d-flex">
+            <img src="pictures/download.jpg" alt="بهترین هندزفری" class="image-circle"
+                onclick="showVideo('path/to/your/first/video.mp4')">
+            <div class="image-wrapper">بهترین هندزفری ها تا ۵میلیون</div>
+            <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+                onclick="showVideo('path/to/your/second/video.mp4')">
+            <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+            <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+                onclick="showVideo('path/to/your/second/video.mp4')">
+            <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+    
+            <img src="pictures/images.jpg" alt="بهترین گوشی" class="image-circle"
+                onclick="showVideo('path/to/your/second/video.mp4')">
+            <div class="image-wrapper">بهترین گوشی ۳۰ میلیونی!</div>
+            
+        </div>
+</div>
+
+<div class="cardTaghfif">
+    
+    <a
+        href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+        <img class="img" src="pictures/Screenshot 2024-12-15 163316.png" alt="بهترین گوشی"></a>      
+    <a
+        href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+        <img class="img" src="pictures/Screenshot 2024-12-15 163347.png" alt="بهترین گوشی"></a>
+
+</div>
+<div class="slider">
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164459.png" alt="Logo 1"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164736.png" alt="Logo 2"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164539.png" alt="Logo 3"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164459.png" alt="Logo 1"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164736.png" alt="Logo 2"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164539.png" alt="Logo 3"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164459.png" alt="Logo 1"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164736.png" alt="Logo 2"></div>
+    <div class="slide"><img src="pictures/logo/Screenshot 2024-12-15 164539.png" alt="Logo 3"></div>
+    <!-- بیشتر اسلایدها -->
+</div>
+<div class="cardTaghfif">
+    
+    <a
+        href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+        <img class="img" src="pictures/Screenshot 2024-12-15 165646.png" alt="بهترین گوشی"></a>      
+    <a
+        href="https://www.digikala.com/product-list/plp_220949030/?&promo_name=%DA%A9%D8%B4%D9%81+%D9%87%D9%81%D8%AA%D9%87+%DB%B۶&promo_position=all_mega_menu_top&promo_creative=190739&bCode=190739">
+        <img class="img" src="pictures/Screenshot 2024-12-15 165710.png" alt="بهترین گوشی"></a>
+
+</div>
+
+<div class="product-section">
+    <div class="category">
+        <h2>لپ‌تاپ و الترابوک</h2>
+        <div class="products">
+            <div class="product">
+                <img src="pictures/7797df701dac918ee93656b7e77e7d0618fb3e26_1733742826.webp" alt="لپ‌تاپ ۱">
+                <p>لپ‌تاپ ۱</p>
+            </div>
+            <div class="product">
+                <img src="pictures/db83ae0f5d3f372e57faa0eb1d8520f5cfe0cd31_1728758689.webp" alt="لپ‌تاپ ۲">
+                <p>لپ‌تاپ ۲</p>
+            </div>
+        </div>
+            <div class="products">
+            <div class="product">
+                <img src="pictures/7797df701dac918ee93656b7e77e7d0618fb3e26_1733742826.webp" alt="لپ‌تاپ ۲">
+                <p>لپ‌تاپ ۲</p>
+            </div>
+            <div class="product">
+                <img src="pictures/db83ae0f5d3f372e57faa0eb1d8520f5cfe0cd31_1728758689.webp" alt="لپ‌تاپ ۲">
+                <p>لپ‌تاپ ۲</p>
+            </div>
+            </div>
+        </div>
+        <a href="https://www.digikala.com/personalized-category/notebook-netbook-ultrabook/" class="view-more">مشاهده بیشتر</a>
+        <div class="category">
+            <h2>لپ‌تاپ و الترابوک</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="pictures/7797df701dac918ee93656b7e77e7d0618fb3e26_1733742826.webp" alt="لپ‌تاپ ۱">
+                    <p>لپ‌تاپ ۱</p>
+                </div>
+                <div class="product">
+                    <img src="pictures/db83ae0f5d3f372e57faa0eb1d8520f5cfe0cd31_1728758689.webp" alt="لپ‌تاپ ۲">
+                    <p>لپ‌تاپ ۲</p>
+                </div>
+            </div>
+                <div class="products">
+                <div class="product">
+                    <img src="pictures/7797df701dac918ee93656b7e77e7d0618fb3e26_1733742826.webp" alt="لپ‌تاپ ۲">
+                    <p>لپ‌تاپ ۲</p>
+                </div>
+                <div class="product">
+                    <img src="pictures/db83ae0f5d3f372e57faa0eb1d8520f5cfe0cd31_1728758689.webp" alt="لپ‌تاپ ۲">
+                    <p>لپ‌تاپ ۲</p>
+                </div>
+                </div>
+            </div>
+            <a href="https://www.digikala.com/personalized-category/notebook-netbook-ultrabook/" class="view-more">مشاهده بیشتر</a>
+    </div>
+
+ 
+
+    <!-- بیشتر دسته‌ها -->
+</div>
+
+</body>
+
+</html>
