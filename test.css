@@ -1,0 +1,31 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* گرد کردن گوشه‌ها */
+    padding: 5px;
+    background-color: #f8f8f8; /* رنگ پس‌زمینه */
+    position: relative; /* برای موقعیت‌گیری آیکون */
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 40px 10px 10px; /* فضای سمت راست برای آیکون */
+    flex: 1; /* برای پر کردن فضای موجود */
+    border-radius: 25px; /* گرد کردن گوشه‌ها */
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px; /* فاصله از سمت راست */
+    top: 50%; /* وسط‌یابی عمودی */
+    transform: translateY(-50%); /* وسط‌یابی دقیق */
+}
+
+.search-icon img {
+    width: 20px; /* عرض آیکون */
+    height: 20px; /* ارتفاع آیکون */
+}
+
