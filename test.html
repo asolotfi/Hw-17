@@ -1,7 +1,52 @@
-<div class="search-container">
-    <input type="text" class="search-input" placeholder="جستجو..." />
-    <span class="search-icon">
-        <img src="path/to/search-icon.png" alt="search" />
-    </span>
-</div>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>نمایش متن طولانی</title>
+    <style>
+        .hidden {
+            display: none; /* متن پنهان را مخفی می‌کند */
+        }
+        .read-more {
+            color: blue;
+            cursor: pointer; /* رنگ و نشانگر اشاره‌گر برای راحتر بودن کاربر */
+        }
+    </style>
+</head>
+<body>
+
+<h1>عنوان مقاله</h1>
+<p id="excerpt">
+    این یک متن نمونه است که شامل اطلاعات متنوعی درباره موضوع مورد نظر می‌باشد. 
+    این متن به طور خلاصه به تشریح نکات اصلی می‌پردازد و هدف آن جلب توجه خواننده 
+    به جزئیات بیشتری است که می‌توانند در قسمت‌های بعدی مقاله توضیح داده شوند.
+</p>
+
+<p id="moreText" class="hidden">
+    در اینجا به جزئیات بیشتری درباره موضوع پرداخته می‌شود. این متن می‌تواند شامل 
+    تحلیل‌های عمیق، آمار و اطلاعات بیشتری باشد که درک بهتری از موضوع را برای خواننده فراهم 
+    می‌کند. همچنین ممکن است مثال‌ها و نکات عملی هم در این بخش قرار گیرد تا اطلاعاتی 
+    مفیدتر به خوانندگان ارائه شود.
+</p>
+
+<span id="readMore" class="read-more">بیشتر...</span>
+
+<script>
+    document.getElementById('readMore').onclick = function() {
+        var moreText = document.getElementById('moreText');
+        if (moreText.classList.contains('hidden')) {
+            moreText.classList.remove('hidden');
+            this.innerText = "کمتر...";
+        } else {
+            moreText.classList.add('hidden');
+            this.innerText = "بیشتر...";
+        }
+    };
+</script>
+
+</body>
+</html>
+
+
+
 
