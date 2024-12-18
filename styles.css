@@ -322,6 +322,7 @@ body {
     text-decoration: none;
 }
 
+
 .view-more:hover {
     text-decoration: underline;
     /* افکت هاور */
@@ -332,6 +333,10 @@ body {
     border-radius: 20 px;
     border-color: #e80c0c;
     background-color: #ebe4e4;
+}
+.picture{
+    width: 100px;
+    height: auto;
 }
 
 /* footer */
@@ -369,10 +374,12 @@ hr {
 .footer-logo {
     align-self: flex-end; /* Align image to the right */
     margin-top: 20px; /* Add space above the image */
-    width: 100px; /* Adjust width as necessary */
+    width: 150px; /* Adjust width as necessary */
     height: 70px; /* Maintain aspect ratio */
 }
-
+.p-read{
+    background-color:#faf8f8;
+}
 .container1 {
     display: flex;
     justify-content: space-between;
@@ -427,6 +434,8 @@ hr {
     margin: 10px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    color: #444343;
+    white-space: nowrap; /* جلوگیری از شکستن خط */
 }
 
 h3 {
@@ -507,8 +516,8 @@ a:hover {
 }
 .image-footer{
     border-radius: 10px;
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 50px;
     margin: 10px 10px ;
 }
 .p-footer{
@@ -516,7 +525,9 @@ a:hover {
     text-align: right; /* راست‌چینی متن */
     width: auto; /* اجازه دهید اندازه بر اساس محتوا تعیین شود */
     white-space: nowrap; /* جلوگیری از شکستن خط */
-    margin: 10px;
+    margin-top: auto;
+    margin: auto;
+    font-style: normal;
 }
 .footer-image{
     border-radius: 30px;
@@ -539,6 +550,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     direction: rtl; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 .footer3{
     display: flex;
@@ -575,4 +587,9 @@ a:hover {
     width: 100px;
     height: 100px;
  
+}
+.end{
+    text-align: center; /* راست‌چینی متن */
+    direction: rtl;
+    font-family:Arial, Helvetica, sans-serif;
 }

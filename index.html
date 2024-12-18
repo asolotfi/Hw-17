@@ -319,8 +319,11 @@
         </div>
         <!-- بیشتر دسته‌ها -->
     </div>
-    <div class="Kala">
-        <p>پرفروش‌ترین کالاها</p>
+    <div class="p-read">
+        <p dir="rtl">خواندنی‌ها</p>
+        <div class="picture">
+            <img src="pictures/Screenshot 2024-12-17 231811.png" alt="دیجی‌کالا" class="logo"> 
+        </div>
     </div>
 
 </body>
@@ -329,13 +332,17 @@
     <div class="footer-first">
 
         <img src="pictures/icons/image-Digikala.png" alt="دیجی‌کالا" class="footer-logo">
+        <button class="back-to-top"> یازگشت به بالا</button>
+        <script>
+            document.querySelector('.back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        </script>
         <div class="footer-first1">
-            <p class="p">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
-            <hr>
-            <p class="p">۰۲۱-۹۱۰۰۰۱۰۰</p>
-            <hr>
-            <p class="p">روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
-
+            <pre class="p">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ -  ۰۲۱ |  ۰۲۱- ۹۱۰۰۰۱۰۰  |   روز هفته، ۲۴ ساعته پاسخگوی شما هستیم   </pre>
         </div>
     </div>
     <div class="container-circle">
@@ -361,7 +368,7 @@
     <div class="container1">
         <div class="container2">
             <div class="customer-services">
-                <h3>خدمات مشتریان</h3>
+                <h4>خدمات مشتریان</h4>
                 <ul>
                     <li><a class="customer-services" href="#">پاسخ به پرسش‌های متداول</a></li>
                     <li><a class="customer-services" href="#">روش‌های بازگرداندن کالا</a></li>
@@ -371,7 +378,7 @@
                 </ul>
             </div>
             <div class="about">
-                <h3>با دیجی‌کالا</h3>
+                <h4>با دیجی‌کالا</h4>
                 <ul>
                     <li><a class="about" href="#">اتاق خبر دیجی‌کالا</a></li>
                     <li><a class="about" href="#">فروش در دیجی‌کالا</a></li>
@@ -382,7 +389,7 @@
                 </ul>
             </div>
             <div class="shoping">
-                <h3>راهنمای خرید از دیجی‌کالا </h3>
+                <h4>راهنمای خرید از دیجی‌کالا </h4>
                 <ul>
                     <li><a class="shoping" href="#"> نحوه ثبت سفارش </a></li>
                     <li><a class="shoping" href="#">رویه ارسال سقارش</a></li>
@@ -392,14 +399,13 @@
         </div>
         <div class="container3">
             <div class="social-media">
-                <h3>همراه ما باشید!</h3>
+                <h4>همراه ما باشید!</h4>
                 <a href="https://www.instagram.com/digikalacom/"><img src="pictures/logo/footer4.png"></a>
                 <a href="https://twitter.com/digikalacom"><img src="pictures/logo/footer5.png"></a>
-                <a href="https://www.linkedin.com/company/digikala"><img src="pictures/logo/footer6.png"></a>
-                <a href="https://www.aparat.com/digikala/"><img src="pictures/logo/footer7.png"></a>
+                <a href="https://www.linkedin.com/company/digikala"><img src="pictures/logo/footer6.png"></a>           
             </div>
             <div class="email-subscription">
-                <h3>با ثبت ایمیل، از جدیدترین تخفیف‌ها باخبر شوید</h3>
+                <h4>با ثبت ایمیل، از جدیدترین تخفیف‌ها باخبر شوید</h4>
                 <input type="email" placeholder="ایمیل شما" />
                 <button>ثبت</button>
             </div>
@@ -413,16 +419,16 @@
         <p class="p-footer">دانلود اپلیکیشن دیجی‌کالا</p>
     </div>
     <div class="app2">
-        <img src="pictures/footer/1.png" alt="بهترین هندزفری" class="image-footer">
+        <img src="pictures/footer/4.png" alt="بهترین هندزفری" class="image-footer">
         <img src="pictures/footer/2.png" alt="بهترین هندزفری" class="image-footer">
         <img src="pictures/footer/3.png" alt="بهترین هندزفری" class="image-footer">
-        <img src="pictures/footer/4.png" alt="بهترین هندزفری" class="image-footer">
+        <img src="pictures/footer/1.png" alt="بهترین هندزفری" class="image-footer">
     </div>
     </div>
     <hr>
     <div class="footer1">
         <div class="footer2">
-            <h1> فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h1>
+            <h3> فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h3>
             <p id="excerpt">
                 یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در
                 مدت
@@ -586,7 +592,7 @@
     </div>
     <div>
         <hr>
-        <p>برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای
+        <p class="end">برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای
             شرکت
             نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</p>
 
