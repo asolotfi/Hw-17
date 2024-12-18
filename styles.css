@@ -123,10 +123,6 @@ body {
     direction: rtl;
     justify-content: flex-end;
 }
-
-
-
-
 .image-circle {
     width: 100px;
     /* عرض دایره */
@@ -321,13 +317,62 @@ body {
     color: #007bff;
     text-decoration: none;
 }
+.dagh{
+   background-color: #fbf8f8; 
+   border-radius: 30%;
+   border: #0c0c0c;
+   
 
+}
+.dagh-p{
+    text-align: center;
+}
+.dagh-img{
+    width: 10px;
+    height: 10px;
+}
+.img-read{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+.p-read{
+    display: flex;
+    flex-direction: column;
+    /* چیدمان عمودی */
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: #f6f7f9;
 
+}
+.p-read1{
+
+    display: flex;
+    flex-direction: row-reverse;
+    /* چیدمان عمودی */
+    justify-content: flex-end;
+    /* چینش به سمت راست */
+    align-items: rtl;
+    justify-content: space-between;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+.p-read2{
+    display: flex;
+    flex-direction: column;
+    /* چیدمان عمودی */
+    justify-content: space-between;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+.red-p{
+    text-align: right;
+}
 .view-more:hover {
     text-decoration: underline;
     /* افکت هاور */
 }
-
 .Kala {
     border: black;
     border-radius: 20 px;
