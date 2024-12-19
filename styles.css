@@ -1,4 +1,30 @@
+@media (max-width: 1024px) {
+    .productcard {
+        flex: 1 1 calc(25% - 20px); /* چهار کارت در یک ردیف */
+    }
+     .search-input {
+        width: 400px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 10px;
+    }
+      .search-input {
+        width: 400px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 10px;
+    }
+}
 @media (max-width: 768px) {
+    .responsive-container {
+        max-width: 1200px; /* حداکثر عرض مانند عرض صفحه کاربر */
+        margin: 0 auto;    /* مرکز کردن */
+        text-align: center; /* متن را مرکز می‌کند */
+    }
     .search-bar {
         display: flex;
         background-color: #e0e0e0;
@@ -7,15 +33,154 @@
         margin-right: auto;
         /* فضای چپ خودکار برای جابجایی به راست */
     }
+    body {
+        background-color: lightblue;
+    }
+    header {
+        flex-direction: column; /* چیدمان عمودی */
+        align-items: flex-start; /* سمت چپ تراز شود */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* هر بخش روی یک خط */
+        justify-content: space-between; /* فاصله برابر */
+    }
+
+    .search-input {
+        width: 100%; /* ورودی جستجو بر روی تمام عرض صفحه */
+        margin-top: 10px; /* فاصله از بالا */
+    }
+    .image-container {
+        flex-direction: column; /* چیدمان عمودی */
+        align-items: center; /* تراز عمودی به مرکز */
+    }
+
+    .image-circle, .image-wrapper {
+        width: 90%; /* عرض کاهش می‌یابد */
+    }
+
+    .carousel-button {
+        align-self: center; /* دکمه مرکز می‌شود */
+    }
+    .carousel-item img {
+        height: auto; /* در حالت موبایل نسبت تصویر حفظ شود */
+    }
+    .productcard {
+        flex: 1 0 46%; /* دو کارت در یک ردیف */
+        flex: 1 0 100%; /* یک کارت در یک ردیف */
+        display: inline-block;
+        flex-direction: column;
+    }
+    .cardTaghfif a {
+        flex: 1 0 calc(50% - 20px); /* دو تصویر در یک ردیف */
+        max-width: calc(50% - 20px); /* 50% عرض */
+    }
+    .p-read2 {
+        flex: 1 1 calc(50% - 20px); /* دو عنصر در یک ردیف */
+    }
+    .productcard {
+        flex: 1 1 calc(50% - 20px); /* دو کارت در یک ردیف */
+    }
+    .cardTaghfif a {
+        flex: 1 1 calc(100% - 20px); /* یک تصویر در یک ردیف در دستگاه‌های کوچکتر */
+        max-width: calc(100% - 20px); /* 100% عرض */
+    }
+}
+@media (max-width: 480px) {
+    .productcard {
+        flex: 1 0 100%; /* یک کارت در یک ردیف */
+        display: inline-block;
+        flex-direction: column;
+
+    }
+    .cardTaghfif a {
+        flex: 1 0 100%; /* یک تصویر در یک ردیف */
+        max-width: 100%; /* 100% عرض */
+    }
+    .p-read2 {
+        flex: 1 1 100%; /* یک عنصر در یک ردیف */
+    }
+    .search-input {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .left-section, .right-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
+/* picture Blue  */
+.Header-image {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px 0;
+    margin: 10px 0;/* کاهش حاشیه برای کاهش فاصله */
+    padding: 0;/* اطمینان از اینکه padding ندارد */
+    max-width: 100%;
+    height: auto;/* ارتفاع خودکار بر اساس نسبت بعد */
+}
+/* sertch/login/logo/shoping card */
+.left-section {
+    display: flex;
+    align-items: ltr;
+    flex-direction: row; 
+    justify-content: flex-start;
+}
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: rtl;
+}
+.search-input {
+    border: none;
+    outline: none;
+    background: #ccc;
+    padding: 10px;
+    flex: 1;/* برای پر کردن فضای موجود */
+    border-radius: 25px; 
+    align-items: rtl;
+    justify-content: flex-end;
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    width: 500px;
+}
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    flex-direction: row-reverse;
+}
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.logo {
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+    direction: rtl;
 }
 
+/*  */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 2vw;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -27,92 +192,17 @@ body {
     /* کاهش حاشیه برای کاهش فاصله */
     padding: 0;
     /* اطمینان از اینکه padding ندارد */
-    margin-top: 0;
-    /* اطمینان از اینکه حاشیه بالایی ندارد */
+    margin-top: 0; /* اطمینان از اینکه حاشیه بالایی ندارد */
+    display: flex; /* استفاده از flexbox برای چینش */
+    justify-content: space-between; /* فاصله بین طرفین */
+    align-items: center; /* تراز عمودی */
+    background-color: #fff; /* رنگ پس‌زمینه */
 }
-
-.Header-image {
-    width: 100%;
-    /* مقدار کمتر برای کاهش عرض */
-    margin: 20px auto;
-    padding: 10px 0;
-    font-size: 18px;
-    margin: 10px 0;
-    /* کاهش حاشیه برای کاهش فاصله */
-    padding: 0;
-    /* اطمینان از اینکه padding ندارد */
-}
-
-.left-section {
-    display: flex;
-    align-items: ltr;
-    flex-direction: row;
-    /* چیدمان عمودی */
-    justify-content: flex-start;
-}
-
-.right-section {
-    display: flex;
-    flex-direction: row;
-    /* چیدمان عمودی */
-    justify-content: flex-end;
-    /* چینش به سمت راست */
-    align-items: rtl;
-
-}
-
-.search-input {
-    border: none;
-    outline: none;
-    background: #ccc;
-    padding: 10px;
-    flex: 1;
-    /* برای پر کردن فضای موجود */
-    border-radius: 25px;
-    /* گرد کردن گوشه‌ها */
-    align-items: rtl;
-    justify-content: flex-end;
-    direction: rtl;
-    /* برای متن rtl */
-    text-align: right;
-    /* چینش متن به سمت راست */
-    display: flex;
-    border: none;
-    border-radius: 25px;
-    width: 500px;
-    outline: none;
-}
-.search-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 5px 10px;
-    background-color: #e0e0e0;
-    flex-direction: row-reverse;
-    /* برای چیدمان rtl */
-}
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-
-}
-
-.logo {
-    width: 200px;
-    height: 40px;
-    margin-right: 20px;
-    direction: rtl;
-}
-
 .icon {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
-
 .login-btn {
     background-color: #fff;
     border: 1px solid #eee;
@@ -122,6 +212,8 @@ body {
     width: 200px;
     direction: rtl;
     justify-content: flex-end;
+    max-width: 100%; /* بهبود ریسپانسیو تصاویر */
+    height: auto; /* حفظ نسبت */
 }
 .image-circle {
     width: 100px;
@@ -135,7 +227,6 @@ body {
     margin-right: 10px;
     /* فاصله بین تصاویر */
 }
-
 .image-container {
     overflow-x: auto;
     /* اطمینان از اسکرول افقی */
@@ -144,7 +235,6 @@ body {
     padding: 10px 0;
     /* فضای بالای و پایینی */
 }
-
 .image-wrapper {
     display: inline-block;
     /* نمایش به صورت بلوک خطی */
@@ -156,36 +246,41 @@ body {
 }
 .productcards {
     display: flex;
-    display: inline-block;
     /* نمایش به صورت بلوک خطی */
     justify-content: space-between;
     padding: 10px 40px;
     background-color: #e80c0c;
     border-bottom: 1px solid #eee;
-    flex-direction: column-reverse;
     /* چیدمان عمودی */
     border-radius: 20px;
     width: auto;
     height: auto;
     cursor: pointer;
     direction: rtl;
-    justify-content: flex-start;
-
+    justify-content: flex-start;               /* استفاده از flexbox */
+    flex-wrap: wrap;             /* اجازه انتقال به ردیف بعد */
+    justify-content: space-between; /* توزیع یکنواخت فاصله بین کارت‌ها */
+    margin: 20px; 
+    flex: 1 1 calc(20% - 20px);  /* پیش فرض: نمایش 5 کارت در یک ردیف */
 }
 .productcard {
-    display: inline-block;
-    /* نمایش به صورت بلوک خطی */
     justify-content: space-between;
     padding: 10px 40px;
     background-color: #fbf9f9;
     border-bottom: 1px solid #eee;
-    flex-direction: column-reverse;
     /* چیدمان عمودی */
     border-radius: 5px;
     width: auto;
     height: auto;
     cursor: pointer;
     direction: rtl;
+    flex: 1 1 calc(20% - 20px);  /* پیش فرض: نمایش 5 کارت در یک ردیف */
+    margin: 10px;                /* فاصله بین کارت‌ها */
+    text-align: center;          /* مرکز چین کردن متن */
+    border: 1px solid #ccc;     /* حاشیه کم رنگ برای کارت */
+    border-radius: 5px;         /* گوشه‌های گرد */
+    padding: 10px;              /* فضای داخلی کارت */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* سایه ملایم برای کارت‌ها */
 }
 
 .image-square {
@@ -194,6 +289,9 @@ body {
     margin-right: 10px;
     /* فاصله بین تصاویر */
     direction: rtl;
+    width: 100%;                 /* تصویر به عرض کامل کارت خواهد بود */
+    height: auto;                /* حفظ نسبت تصویر */
+    border-radius: 5px; 
 }
 
 .card {
@@ -208,7 +306,6 @@ body {
     border-radius: 5px;
     width: 300px;
     height: 180px;
-
     cursor: pointer;
     overflow: auto;
 
@@ -216,22 +313,20 @@ body {
 }
 
 .cards {
-    display: flex;
-    /* فقط از display: flex استفاده کنید */
-    justify-content: space-between;
-    /* برای فاصله گذاری مناسب */
+    display: flex;/* فقط از display: flex استفاده کنید */
+    justify-content: space-between; /* برای فاصله گذاری مناسب */
     padding: 10px 40px;
     background-color: #fafaf8;
     border-bottom: 1px solid #fafaf8;
     border-radius: 20px;
-    flex-direction: row;
-    /* تغییر به row برای چیدمان افقی */
+    flex-direction: row; /* تغییر به row برای چیدمان افقی */
     width: auto;
     height: auto;
     cursor: pointer;
     border-radius: 15px;
+    flex-wrap: wrap; /* به خط بعدی منتقل می‌شود وقتی جا نداشته باشد */  
+    margin: 0 -10px; /* فضای منفی برای ایجاد فاصله */
 }
-
 .cardTaghfif {
     display: flex;
     /* فقط از display: flex استفاده کنید */
@@ -247,31 +342,33 @@ body {
     height: auto;
     cursor: pointer;
     border-radius: 15px;
+    flex-wrap: wrap;             /* اجازه انتقال به خط بعد */
+    margin: 0 -10px;             /* فضای منفی برای تنظیم فاصله */
 }
 
 .img {
     border-radius: 50px;
+    width: 100%;                   /* تصویر به طور کامل در عرض لینک */
+    height: auto;                  /* حفظ نسبت تصویر */
+    border-radius: 5px;           /* گوشه‌های گرد برای زیباتر شدن */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* سایه برای تصاویر */
 }
-
 .slider {
     display: flex;
     overflow-x: auto;
     width: 100%;
 }
-
 .slide {
     min-width: 150px;
     /* تنظیم عرض متناسب */
     margin: 0 10px;
     /* فاصله بین اسلایدها */
 }
-
 .slide img {
     max-width: 100%;
     border-radius: 10px;
     /* گوشه‌های گرد */
 }
-
 .product-section {
     display: flex;
     justify-content: space-around;
@@ -279,7 +376,6 @@ body {
     /* امکان چیدمان چند ردیفی */
     padding: 20px;
 }
-
 .category {
     width: 30%;
     /* تنظیم عرض دسته‌ها */
@@ -292,25 +388,21 @@ body {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .products {
     display: flex;
     flex-direction: row-reverse;
     /* چیدمان عمودی */
 }
-
 .product {
     margin: 10px 0;
     /* فاصله بین محصولات */
 }
-
 .product img {
     max-width: 100%;
     border-radius: 5px;
     /* گوشه‌های گرد برای تصاویر */
 
 }
-
 .view-more {
     display: inline-block;
     margin-top: 10px;
@@ -357,6 +449,7 @@ body {
     justify-content: space-between;
     margin: 5px 5px;
     padding: 5px 5px;
+    flex-wrap: wrap; /* اجازه انتقال به خط بعد */
 }
 .p-read2{
     display: flex;
@@ -365,6 +458,7 @@ body {
     justify-content: space-between;
     margin: 5px 5px;
     padding: 5px 5px;
+    flex: 1 1 calc(25% - 20px); /* پیش فرض: چهار عنصر در یک ردیف */
 }
 .red-p{
     text-align: right;
@@ -447,7 +541,6 @@ hr {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .image-container {
     display: flex;
     justify-content: space-around; /* Adjusts spacing between items */
@@ -585,18 +678,7 @@ a:hover {
     direction: rtl;
 
 }
-.footer1 {
-    display: flex;
-    flex-direction: row;
-    direction: rtl;
 
-}
-.footer2{
-    display: flex;
-    flex-direction: column;
-    direction: rtl; 
-    font-family: Arial, Helvetica, sans-serif;
-}
 .footer3{
     display: flex;
     flex-direction: row;
@@ -631,10 +713,22 @@ a:hover {
     border-radius: 20px;
     width: 100px;
     height: 100px;
- 
 }
 .end{
-    text-align: center; /* راست‌چینی متن */
+    text-align: center; 
     direction: rtl;
     font-family:Arial, Helvetica, sans-serif;
+}
+/* footer  */
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+
+}
+.footer2{
+    display: flex;
+    flex-direction: column;
+    direction: rtl; 
+    font-family: Arial, Helvetica, sans-serif;
 }
